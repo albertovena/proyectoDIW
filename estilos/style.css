@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Configurar la imagen de fondo para todo el body */
+body {
+    background-position: center;
+    background-color: #F5F5DC;
+    text-align: center;
+}
+
+#cabecera {
+    margin: auto;
+    width: 500px;
+    
+}
+
+.menu{
+    margin: auto;
+    width: 600px;
+    margin-left: 100px;
+    background-color: #9CAF88;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.menu li a {
+   
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu > li {
+    float: left;
+    position: relative; /* Necesario para los submenús */
+}
+
+.menu a{
+    color: #7A6C5D;
+    background-color: #9CAF88;
+
+}
+
+
+.menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10; /* Asegura que el submenú esté por encima del section */
+    padding: 10px;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+#imgBanner{
+    width: 98%;
+    max-height: 250px;
+    background-size: cover;
+}
+
+h1,h2,h3{
+    color: #E08D6E;
+    
+    margin-bottom: 20px;
+}
+
+a{
+    color: #7A6C5D;
+}
+
+/* Estilo para la sección de contenido */
+section {
+    clear: both;
+    margin:20px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+#bienvenida p{
+    text-align: justify;
+}
+
+
+
+.receta{
+    margin: 10px;
+    padding: 10px;
+}
+
+.receta img{
+    width: 200px;
+    height: 150px;
+}
+
+#pie-pagina{
+    text-align: right;
+    margin: 20px;
+    padding: 30px;
+}
+
+#paella{
+    width: 500px;
+    height: 300px;
+}
+
+.receta h4{
+    padding: 10px;
+}
+
+
+
+
+#recetas{
+    text-align: justify;
+   
+}
+
+#recetas h3{
+    margin-left: 20px;
+}
