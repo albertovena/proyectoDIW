@@ -1,128 +1,216 @@
+/* 
+Bloque general para reiniciar los márgenes y rellenos
+de todos los elementos, asegurando que todos empiecen sin espacio adicional. 
+*/
 * {
     padding: 0;
     margin: 0;
-    
 }
 
-/* Configurar la imagen de fondo para todo el body */
+/* 
+Configurar el estilo del <body>:
+- Establecer un color de fondo
+- Centrar el texto dentro del body.
+*/
 body {
-    background-position: center;
+
     background-color: #F5F5DC;
     text-align: center;
 }
 
+/* 
+- Centrar la cabecera en la página.
+- Asignar un ancho fijo de 500px.
+*/
 #cabecera {
     margin: auto;
     width: 500px;
-    
 }
 
-.menu{
+/* 
+Estilos para el menú de navegación:
+- Centrar el menú en la página.
+- Asignar un ancho fijo de 600px.
+- Añadir un margen a la izquierda para desplazar el menú.
+- Establecer un color de fondo 
+*/
+.menu {
     margin: auto;
     width: 600px;
     margin-left: 100px;
     background-color: #9CAF88;
 }
 
+/* 
+- Quitar los puntos  de la lista.
+*/
 ul, li {
     list-style: none;
 }
 
+/* 
+Estilos para los enlaces dentro del menú:
+- Eliminar el subrayado de los enlaces.
+- Añadir relleno para hacer los enlaces más grandes.
+- Hacer que los enlaces ocupen el ancho completo del elemento <li>.
+*/
 .menu li a {
-   
     text-decoration: none;
     padding: 10px 15px;
     display: block;
 }
 
+/* 
+Estilos para los elementos <li> del menú principal:
+- Alinear los elementos horizontalmente.
+- Hacer que los submenús se posicionen de manera relativa.
+*/
 .menu > li {
     float: left;
-    position: relative; /* Necesario para los submenús */
+    position: relative; /* Necesario para posicionar los submenús */
 }
 
-.menu a{
+/* 
+Estilos generales para los enlaces del menú:
+- Cambiar el color del texto
+- Establecer un color de fondo 
+*/
+.menu a {
     color: #7A6C5D;
     background-color: #9CAF88;
-
 }
 
-
+/* 
+Estilos para los submenús:
+- Ocultar el submenú por defecto.
+- Posicionarlo justo debajo del elemento padre.
+- Asignar un índice z para asegurarse de que se muestre por encima de otros elementos.
+*/
 .menu li ul {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 10; /* Asegura que el submenú esté por encima del section */
+    z-index: 10;
     padding: 10px;
 }
 
+/* 
+Mostrar el submenú cuando se pasa el ratón por encima del elemento padre.
+*/
 .menu li:hover > ul {
     display: block;
 }
 
-#imgBanner{
+/* 
+Estilos para la imagen del banner:
+- Configurar el ancho al 98% del contenedor.
+- Limitar la altura máxima a 250px.
+- Ajustar el tamaño de la imagen para que cubra el espacio.
+*/
+#imgBanner {
     width: 98%;
     max-height: 250px;
     background-size: cover;
 }
 
-h1,h2,h3{
+/* 
+Estilos para los encabezados (h1, h2, h3):
+- Cambiar el color del texto a un tono salmón.
+- Añadir un margen inferior para separar los elementos.
+*/
+h1, h2, h3 {
     color: #E08D6E;
-    
     margin-bottom: 20px;
 }
 
-a{
+/* 
+Estilo general para todos los enlaces de la página:
+- Cambiar el color del texto .
+*/
+a {
     color: #7A6C5D;
 }
 
-/* Estilo para la sección de contenido */
+/* 
+Estilos para la sección principal de contenido:
+- Limpiar los elementos flotantes.
+- Centrarse con márgenes automáticos y relleno.
+- Asignar un ancho del 90% del contenedor.
+*/
 section {
     clear: both;
-    margin:20px auto;
+    margin: 20px auto;
     padding: 10px;
     width: 90%;
 }
 
-#bienvenida p{
+/* 
+Estilos para el párrafo dentro de la sección de bienvenida:
+- Justificar el texto para que se alinee en ambos márgenes.
+*/
+#bienvenida p {
     text-align: justify;
 }
 
-
-
-.receta{
+/* 
+Estilos para los artículos de recetas:
+- Añadir márgenes y relleno para espaciar las recetas.
+*/
+.receta {
     margin: 10px;
     padding: 10px;
 }
 
-.receta img{
+/* 
+Estilos para las imágenes dentro de las recetas:
+- Ajustar el tamaño de las imágenes.
+*/
+.receta img {
     width: 200px;
     height: 150px;
 }
 
-#pie-pagina{
+/* 
+Estilos para el pie de página:
+- Alinear el contenido a la derecha.
+- Añadir márgenes y relleno.
+*/
+#pie-pagina {
     text-align: right;
     margin: 20px;
     padding: 30px;
 }
 
-#paella{
+/* 
+Estilos para una imagen específica con el id "paella":
+- Asignar un tamaño fijo de 500x300px.
+*/
+#paella {
     width: 500px;
     height: 300px;
 }
 
-.receta h4{
+/* 
+Estilos para el encabezado h4 dentro de las recetas:
+- Añadir relleno para separar el texto.
+*/
+.receta h4 {
     padding: 10px;
 }
 
-
-
-
-#recetas{
+/* 
+Estilos para la sección de recetas:
+- Justificar el texto para que se alinee en ambos márgenes.
+*/
+#recetas {
     text-align: justify;
-   
 }
 
-#recetas h3{
+/* 
+Estilos para el encabezado h3 dentro de la sección de recetas:
+- Añadir un margen a la izquierda para desplazar el título.
+*/
+#recetas h3 {
     margin-left: 20px;
 }
